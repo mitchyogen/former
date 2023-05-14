@@ -1,0 +1,53 @@
+.former__home-container {
+    background-color: var(--color-former-orange);
+}
+
+.former__home-wrapper {
+    max-width: 1186px;
+    margin: 0 auto;
+}
+
+.former__home-content {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.former__home_getInTouch-btn {
+    width: 176px;
+    height: 40px;
+    background: var(--color-former-dark);
+    color: var(--color-former-white);
+    border: 0;
+    border-radius: 24px;
+}
+
+.former__home_getInTouch-btn:hover {
+    background-color: var(--color-former-white);
+    color: var(--color-former-dark);
+}
+
+@media screen and (max-width: 768px) {
+    .former__home-content {
+        width: 80%;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .former__home-content {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .former__home_getInTouch-btn {
+        width: 100%;
+    }
+}

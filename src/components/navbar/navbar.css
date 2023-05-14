@@ -1,0 +1,118 @@
+.former__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0.75rem 0;
+    z-index: 1;
+}
+
+.former__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1186px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.former__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.former__navbar-links_container p,
+.former__navbar-sign p,
+.former__navbar-menu_container p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.former__navbar-menu {
+    margin-left: 1rem;
+    /* display: none; */
+    position: relative;
+}
+
+.former__navbar-menu svg {
+    cursor: pointer;
+}
+
+.former__navbar-menu_overlay {
+    width: 1186px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: 190px auto;
+}
+
+.former__navbar-menu-overlay-top {
+    max-width: 1186px;
+    margin: 0 auto;
+}
+
+.former__navbar-menu_overlay-close-icon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.former__navbar-menu_container {
+    background: var(--color-former-white);
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.former__navbar-links_p {
+    display: flex;
+    flex-direction: row;
+}
+
+.former__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .former__navbar-links {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .former__navbar {
+        padding-left: 0;
+    }
+
+    .former__navbar-links {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .former__navbar-menu_overlay-close-icon {
+        padding-right: 0;
+    }
+
+    .former__navbar-links_p {
+        display: none;
+    }
+}

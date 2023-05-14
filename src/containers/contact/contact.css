@@ -1,0 +1,75 @@
+.former__contact-container {
+    background-color: var(--color-former-white);
+}
+
+.former__contact-wrapper {
+    max-width: 1186px;
+    margin: 0 auto;
+    padding: 6rem 2rem 10rem 2rem;
+}
+
+.former__contact-content {
+    width: 100%;
+    display: flex;
+}
+
+.former__contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.former__contact-left-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-top: 4em;
+}
+
+.former__contact-right {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.former__contact-header {
+    color: var(--color-former-dark);
+    cursor: text;
+}
+
+.former__contact-header-border {
+    border-top: 2px solid var(--color-former-dark);
+    margin-top: 10px;
+    width: 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .former__contact-wrapper {
+        padding-bottom: 2em;
+    }
+
+    .former__contact-left-content {
+        width: 100%;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .former__contact-wrapper {
+        padding-bottom: 2em;
+    }
+    .former__contact-content {
+        flex-direction: column;
+    }
+    .former__contact-left-content {
+        width: 100%;
+    }
+
+    .former__contact-right {
+        margin-top: 1em;
+    }
+}

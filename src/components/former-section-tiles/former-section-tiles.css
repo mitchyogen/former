@@ -1,0 +1,60 @@
+.former__section-tiles-wrapper {
+    max-width: 1186px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.default-bottom-padding {
+    padding-bottom: 8rem;
+}
+
+.extend-bottom-padding {
+    padding-bottom: 15rem;
+}
+
+.former__section-tiles-header {
+    cursor: text;
+    text-transform: uppercase;
+}
+
+.former__section-tiles-header-border {
+    margin-top: 10px;
+    width: 2.5em;
+}
+
+.former__section-tiles-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.former__section-tiles-title {
+    margin-top: 4rem;
+}
+
+.former__section-tiles-details {
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 480px) {
+    .former__section-tiles-wrapper {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .former__section-tiles-content {
+        width: 100%;
+    }
+
+    .default-bottom-padding {
+        padding-bottom: 2rem;
+    }
+
+    .extend-bottom-padding {
+        padding-bottom: 8rem;
+    }
+}

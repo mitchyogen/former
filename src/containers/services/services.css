@@ -1,0 +1,37 @@
+.former__services-container {
+    background-color: var(--color-former-dark);
+}
+
+.former__services-wrapper {
+    max-width: 1186px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 6rem 2rem 20rem 2rem;
+}
+
+.former__services-header {
+    color: var(--color-former-white);
+    cursor: text;
+}
+
+.former__services-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.former__services-header-border {
+    border-top: 2px solid #fff;
+    margin-top: 10px;
+    width: 4%;
+}
+
+.former__services-title {
+    color: var(--color-former-white);
+    margin-top: 4rem;
+}
+
+.former__services-details {
+    color: var(--color-former-white);
+    margin-top: 35px;
+}
