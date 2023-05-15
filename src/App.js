@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import { Navbar, FormerSectionTiles } from "./components";
 import { Home, Contact, Footer } from "./containers";

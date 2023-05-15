@@ -18,15 +18,15 @@ const FOOTER_DETAILS = {
     social: {
         linkedIn: {
             label: "LinkedIn",
-            url: "#",
+            url: "https://linkedin.com/company/formersg",
         },
         instagram: {
             label: "Instagram",
-            url: "#",
+            url: "https://instagram.com/former_sg",
         },
         spotify: {
             label: "Spotify",
-            url: "#",
+            url: "https://open.spotify.com/playlist/7AfVYy3edF037jp7Ujk1Bu?si=3477cf83580f4f12",
         },
     },
     companyName: "Former 2023",
@@ -53,21 +53,36 @@ const Footer = () => {
                         <div className="former_footer-grid">
                             <div></div>
                             <div className="former__footer-address">{FOOTER_DETAILS.street}</div>
-                            <a href={FOOTER_DETAILS.social.linkedIn.url} className="former__footer-social">
+                            <a
+                                href={FOOTER_DETAILS.social.linkedIn.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="former__footer-social"
+                            >
                                 {FOOTER_DETAILS.social.linkedIn.label}
                             </a>
                             <a href={FOOTER_DETAILS.contact.url} className="former__footer-contact">
                                 {FOOTER_DETAILS.contact.label}
                             </a>
                             <div className="former__footer-address">{FOOTER_DETAILS.unitAndPostalCode}</div>
-                            <a href={FOOTER_DETAILS.social.instagram.url} className="former__footer-social">
+                            <a
+                                href={FOOTER_DETAILS.social.instagram.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="former__footer-social"
+                            >
                                 {FOOTER_DETAILS.social.instagram.label}
                             </a>
                             <a href={FOOTER_DETAILS.email.url} className="former__footer-email">
                                 {FOOTER_DETAILS.email.label}
                             </a>
                             <div className="former__footer-address">Singapore</div>
-                            <a href={FOOTER_DETAILS.social.spotify.url} className="former__footer-social">
+                            <a
+                                href={FOOTER_DETAILS.social.spotify.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="former__footer-social"
+                            >
                                 {FOOTER_DETAILS.social.spotify.label}
                             </a>
                         </div>

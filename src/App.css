@@ -8,6 +8,7 @@
 body {
     font-family: var(--font-family);
     background-color: var(--color-former-orange);
+    -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -67,11 +68,23 @@ a,
     cursor: pointer;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
 a.overlay-link {
     font-weight: var(--font-weight-light);
     font-size: 3rem;
     line-height: 48px;
     color: var(--color-former-dark);
+}
+
+a.overlay-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 12px;
 }
 
 footer,

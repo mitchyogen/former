@@ -16,6 +16,9 @@
     margin-bottom: 60px;
 }
 
+.former__footer-backToTop:hover {
+    text-decoration: none;
+}
 .former__footer-backToTop {
     display: flex;
     justify-content: flex-end;
