@@ -6,7 +6,7 @@ const Home = () => {
         document.getElementById("contact").scrollIntoView({ behavior: "smooth" }, false);
     };
     return (
-        <section className="former__home-container">
+        <section className="former__home-container" id="home">
             <div className="former__home-wrapper">
                 <div className="former__home-content">
                     <h1>

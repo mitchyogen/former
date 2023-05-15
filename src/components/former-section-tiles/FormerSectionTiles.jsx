@@ -20,7 +20,7 @@ const FormerSectionTiles = ({ id, pageTitle, details, backgroundBgColor, textCol
                 <div className="former__section-tiles-content">
                     <h2 className="former__section-tiles-title" style={{ color: textColor }}>
                         {pageTitle.map((title) => (
-                            <div>{title}</div>
+                            <div key={title}>{title}</div>
                         ))}
                     </h2>
                     <p className="former__section-tiles-details" style={{ color: textColor }}>

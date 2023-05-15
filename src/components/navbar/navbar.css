@@ -54,7 +54,7 @@
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    margin: 190px auto;
+    margin: 190px 0 0;
 }
 
 .former__navbar-menu-overlay-top {
@@ -102,6 +102,15 @@
 @media screen and (max-width: 480px) {
     .former__navbar {
         padding-left: 0;
+    }
+
+    .former__navbar-menu_container {
+        overflow: hidden;
+    }
+
+    .former__navbar-menu_overlay {
+        width: 100%;
+        margin: 80px 0 0;
     }
 
     .former__navbar-links {

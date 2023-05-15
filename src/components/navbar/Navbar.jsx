@@ -4,9 +4,10 @@ import { MdOpenInNew } from "react-icons/md";
 import logo from "../../logo.svg";
 import "./navbar.css";
 import FormerLogo from "../../assets/former-logo";
+import FormerLogoAsterisk from "../../assets/former-logo-asterisk";
 
 // Pass in color from parent component for nav text and svg
-const Navbar = ({ bgColor, linkColor }) => {
+const Navbar = ({ bgColor, linkColor, logo }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const handleOpenModal = () => {
@@ -20,13 +21,13 @@ const Navbar = ({ bgColor, linkColor }) => {
     };
 
     return (
-        <div className="former__navbar" style={{ backgroundColor: bgColor, color: linkColor }}>
+        <div className="former__navbar" style={{ backgroundColor: bgColor }}>
             <div className="former__navbar-links">
                 <div className="former__navbar-links_logo">
-                    <FormerLogo />
+                    {logo === "small" ? <FormerLogoAsterisk fill={linkColor} /> : <FormerLogo />}
                 </div>
-                <div className="former__navbar-links_container" style={{ color: "#000" }}>
-                    <div className="former__navbar-links_p">
+                <div className="former__navbar-links_container">
+                    <div className="former__navbar-links_p" style={{ color: linkColor }}>
                         <p>
                             <a href="#services">Services</a>
                         </p>
@@ -41,7 +42,7 @@ const Navbar = ({ bgColor, linkColor }) => {
                         </p>
                     </div>
                     <div className="former__navbar-menu">
-                        <RiMenuLine color="#000" size={27} onClick={handleOpenModal} />
+                        <RiMenuLine color={linkColor} size={27} onClick={handleOpenModal} />
                         {toggleMenu && (
                             <div className="former__navbar-menu_container scale-up-center">
                                 <div className="former__navbar-menu-overlay-top">
