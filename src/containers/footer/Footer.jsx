@@ -2,6 +2,7 @@ import React from "react";
 import FormerLogoAsterisk from "../../assets/former-logo-asterisk";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import "./footer.css";
+import { DEFAULT } from "../../utils";
 
 const FOOTER_DETAILS = {
     street: "68 Circular Road",
@@ -51,7 +52,7 @@ const Footer = ({ display = "main" }) => {
                 <div className="former__footer-links-wrapper">
                     <div className="former__footer-links-left-column">
                         <div className="former__footer-logo">
-                            <FormerLogoAsterisk />
+                            <FormerLogoAsterisk fill={DEFAULT.color.dark} />
                         </div>
                         <div className="former_footer-grid">
                             <div></div>

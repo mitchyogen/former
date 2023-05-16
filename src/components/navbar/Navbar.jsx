@@ -100,7 +100,9 @@ const Navbar = ({ bgColor, linkColor, logo }) => {
                                             </p>
                                         </div>
                                     </div>
-                                    <Footer display="overlay" />
+                                    <div>
+                                        <Footer display="overlay" />
+                                    </div>
                                 </div>
                             </div>
                         )}
