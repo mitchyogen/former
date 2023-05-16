@@ -12,7 +12,15 @@
 }
 
 .extend-bottom-padding {
-    padding-bottom: 15rem;
+    padding-bottom: 30rem;
+}
+
+.default-top-padding {
+    padding-top: 8rem;
+}
+
+.extend-top-padding {
+    padding-top: 15em;
 }
 
 .former__section-tiles-header {
@@ -39,6 +47,16 @@
     margin-top: 35px;
 }
 
+@media screen and (max-width: 768px) {
+    .extend-bottom-padding {
+        padding-bottom: 40rem;
+    }
+
+    .extend-top-padding {
+        padding-top: 18em;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .former__section-tiles-wrapper {
         width: 100%;
@@ -50,11 +68,11 @@
         width: 100%;
     }
 
-    .default-bottom-padding {
-        padding-bottom: 2rem;
+    .extend-bottom-padding {
+        padding-bottom: 40em;
     }
 
-    .extend-bottom-padding {
-        padding-bottom: 8rem;
+    .extend-top-padding {
+        padding-top: 20em;
     }
 }

@@ -1,0 +1,110 @@
+.former__client-container {
+    max-width: 1123px;
+    margin: 0 auto;
+}
+
+.former__client-wrapper {
+    position: absolute;
+    margin-top: -25em;
+    background-color: var(--color-former-white);
+    padding: 3em;
+    border-radius: 8px;
+    max-width: 1123px;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.former__client-content {
+    display: flex;
+}
+
+.former__client-content-left {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.former__client-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    padding-left: 4em;
+}
+
+.former__client-border {
+    border-top: 2px solid var(--color-former-dark);
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 2em;
+}
+
+.former__client-asterisk {
+    margin-top: 4em;
+}
+
+.former__client-asterisk > svg {
+    transform: scale(3);
+}
+
+@media screen and (max-width: 768px) {
+    .former__client-wrapper {
+        padding-left: 2em;
+        padding-top: 4em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+        margin-top: -35em;
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+
+    .former__client-content {
+        flex-direction: column;
+    }
+
+    .former__client-content-left {
+        width: 100%;
+    }
+
+    .former__client-content-right {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2em;
+    }
+
+    .former__client-asterisk {
+        display: flex;
+        text-align: right;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 0;
+        margin-right: 3em;
+    }
+
+    .former__client-asterisk > svg {
+        transform: scale(2);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .former__client-wrapper {
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-top: -35em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .former__client-content-left {
+        width: 100%;
+    }
+
+    .former__client-content-right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .former__client-asterisk {
+        margin-top: 1em;
+    }
+}

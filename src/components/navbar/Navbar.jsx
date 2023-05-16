@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOpenInNew } from "react-icons/md";
+import { Footer } from "../../containers";
+
 import "./navbar.css";
 import FormerLogo from "../../assets/former-logo";
 import FormerLogoAsterisk from "../../assets/former-logo-asterisk";
@@ -98,6 +100,7 @@ const Navbar = ({ bgColor, linkColor, logo }) => {
                                             </p>
                                         </div>
                                     </div>
+                                    <Footer display="overlay" />
                                 </div>
                             </div>
                         )}

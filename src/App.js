@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import { Navbar, FormerSectionTiles } from "./components";
+import { Navbar, FormerSectionTiles, ClientWork } from "./components";
 import { Home, Contact, Footer } from "./containers";
 import { DEFAULT } from "./utils";
 import { APPROACH_PAGE, SERVICE_PAGE, TEAM_PAGE } from "./pages";
@@ -94,6 +94,7 @@ const App = () => {
                         extendBottomPadding={true}
                     />
                 </div>
+                <ClientWork />
                 <div ref={approachRef}>
                     <FormerSectionTiles
                         id={APPROACH_PAGE.id}
@@ -101,6 +102,7 @@ const App = () => {
                         details={APPROACH_PAGE.details}
                         backgroundBgColor={APPROACH_PAGE.backgroundColor}
                         textColor={APPROACH_PAGE.textColor}
+                        extendTopPadding={true}
                     />
                 </div>
                 <div ref={teamRef}>

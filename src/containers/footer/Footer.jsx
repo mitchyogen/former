@@ -33,11 +33,14 @@ const FOOTER_DETAILS = {
     companyRegNo: "UEN/GST101010101A",
 };
 
-const Footer = () => {
+const Footer = ({ display = "main" }) => {
     return (
-        <footer className="former__footer-container">
-            <div className="former__footer-wrapper">
-                <div className="former__footer-backToTop-container">
+        <footer className={"former__footer-container " + display}>
+            <div className={"former__footer-wrapper " + display}>
+                <div
+                    className="former__footer-backToTop-container"
+                    style={{ display: display === "overlay" ? "none" : "flex" }}
+                >
                     <a href="#" className="former__footer-backToTop">
                         <div className="former__footer-backToTop-arrowUp">
                             <MdKeyboardArrowUp size={40} />

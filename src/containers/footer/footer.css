@@ -1,11 +1,21 @@
-.former__footer-container {
+.former__footer-container.main {
     background-color: var(--color-former-orange);
 }
 
-.former__footer-wrapper {
+.former__footer-container.overlay {
+    background-color: var(--color-former-white);
+}
+
+.former__footer-wrapper.main {
     max-width: 1186px;
     margin: 0 auto;
     padding: 20px 40px;
+}
+
+.former__footer-wrapper.overlay {
+    max-width: 1186px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .former__footer-backToTop-container {

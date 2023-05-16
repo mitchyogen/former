@@ -1,13 +1,22 @@
 import React from "react";
 import "./former-section-tiles.css";
 
-const FormerSectionTiles = ({ id, pageTitle, details, backgroundBgColor, textColor, extendBottomPadding = false }) => {
+const FormerSectionTiles = ({
+    id,
+    pageTitle,
+    details,
+    backgroundBgColor,
+    textColor,
+    extendBottomPadding = false,
+    extendTopPadding = false,
+}) => {
     return (
         <section className="former__section-tiles-container" id={id} style={{ backgroundColor: backgroundBgColor }}>
             <div
                 className={
                     "former__section-tiles-wrapper " +
-                    (extendBottomPadding ? "extend-bottom-padding" : "default-bottom-padding")
+                    (extendBottomPadding ? "extend-bottom-padding" : "default-bottom-padding") +
+                    (extendTopPadding ? " extend-top-padding" : " default-top-padding")
                 }
             >
                 <div className="former__section-tiles-header nav" style={{ color: textColor }}>
