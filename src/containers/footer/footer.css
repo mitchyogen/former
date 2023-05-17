@@ -71,6 +71,10 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.former__footer-registration:hover {
+    text-decoration: none;
+}
+
 .mobile-only {
     display: none;
 }

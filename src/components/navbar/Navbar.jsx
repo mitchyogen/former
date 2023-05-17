@@ -7,6 +7,7 @@ import "./navbar.css";
 import FormerLogo from "../../assets/former-logo";
 import FormerLogoAsterisk from "../../assets/former-logo-asterisk";
 import FormerMenuIcon from "../../assets/former-menu-icon";
+import { DEFAULT } from "../../utils";
 
 // Pass in color from parent component for nav text and svg
 const Navbar = ({ bgColor, linkColor, logo }) => {
@@ -25,14 +26,21 @@ const Navbar = ({ bgColor, linkColor, logo }) => {
     return (
         <div className="former__navbar" style={{ backgroundColor: bgColor }}>
             <div className="former__navbar-links">
+                {/* <div className={"former__navbar-links_logo " + logo}>
+                    <FormerLogo />
+                </div> */}
                 <div className="former__navbar-links_logo">
-                    {logo === "small" ? (
-                        <span style={{ paddingTop: "2em" }}>
-                            <FormerLogoAsterisk fill={linkColor} />
-                        </span>
-                    ) : (
-                        <FormerLogo />
-                    )}
+                    <span className={"former__logo-letter " + logo + "-f"}>F</span>
+                    <span className={"former__logo-letter  " + logo + "-o"}>O</span>
+                    <span className={"former__logo-letter  " + logo + "-r"}>R</span>
+                    <span className={"former__logo-letter  " + logo + "-m"}>M</span>
+                    <span className={"former__logo-letter  " + logo + "-e"}>E</span>
+                    <span className={"former__logo-letter  " + logo + "-rr"}>R</span>
+                    <span className={logo + "-star"}>
+                        <FormerLogoAsterisk
+                            fill={bgColor === DEFAULT.color.orange ? DEFAULT.color.white : DEFAULT.color.orange}
+                        />
+                    </span>
                 </div>
                 <div className="former__navbar-links_container">
                     <div className="former__navbar-links_p" style={{ color: linkColor }}>

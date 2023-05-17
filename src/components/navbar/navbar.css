@@ -19,6 +19,21 @@
     padding-right: 40px;
 }
 
+.former__logo-letter {
+    font-weight: var(--font-weight-black);
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+}
+
+.former__navbar-links_logo > svg {
+    margin-left: 2px;
+}
+
+.former__navbar-links_logo {
+    display: flex;
+    overflow: hidden;
+}
+
 .former__navbar-links_container {
     display: flex;
     flex-direction: row;
@@ -46,10 +61,6 @@
 .former__asterisk {
     display: flex;
     padding-top: 8px;
-}
-
-.slide-out {
-    transform: scale(0);
 }
 
 .former__navbar-menu {
@@ -151,4 +162,251 @@
     .former__navbar-menu_container p {
         margin: 0;
     }
+}
+
+/* Animation - Keyframes */
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0%);
+        margin-top: 0;
+    }
+
+    to {
+        transform: translateX(-202px);
+        margin-top: 8px;
+    }
+}
+
+@keyframes slideOutF {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes slideOutO {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes slideOutR {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-90px);
+    }
+}
+
+@keyframes slideOutM {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-120px);
+    }
+}
+
+@keyframes slideOutE {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes slideOutRr {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-180px);
+    }
+}
+
+@keyframes slideOutStar {
+    from {
+        transform: translateX(0%);
+        margin-top: -7px;
+    }
+
+    to {
+        transform: translateX(-160px);
+        margin-top: 0;
+    }
+}
+
+@keyframes slideInF {
+    from {
+        transform: translateX(-202px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInO {
+    from {
+        transform: translateX(-202px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInR {
+    from {
+        transform: translateX(-202px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInM {
+    from {
+        transform: translateX(-202px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInE {
+    from {
+        transform: translateX(-202px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRr {
+    from {
+        transform: translateX(-202px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInStar {
+    from {
+        transform: translateX(-202px);
+        margin-top: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        margin-top: -7px;
+    }
+}
+
+/* Utility classes */
+
+.slideOut-f {
+    animation: slideOutF 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideOut-o {
+    animation: slideOutO 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideOut-r {
+    animation: slideOutR 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideOut-m {
+    animation: slideOutM 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideOut-e {
+    animation: slideOutE 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideOut-rr {
+    animation: slideOutRr 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideOut-star {
+    animation: slideOutStar 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: 0;
+}
+
+.slideIn-f {
+    animation: slideInF 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideIn-o {
+    animation: slideInO 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideIn-r {
+    animation: slideInR 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideIn-m {
+    animation: slideInM 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideIn-e {
+    animation: slideInE 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideIn-rr {
+    animation: slideInRr 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.slideIn-star {
+    animation: slideInStar 0.3s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: -7px;
+    margin-left: 2px;
 }

@@ -8,7 +8,7 @@ import { APPROACH_PAGE, SERVICE_PAGE, TEAM_PAGE } from "./pages";
 const App = () => {
     const [navBarBgColor, setNavBarBgColor] = useState(DEFAULT.color.orange);
     const [navBarLinkColor, setNavBarLinkColor] = useState(DEFAULT.color.dark);
-    const [logoType, setLogoType] = useState("default");
+    const [logoType, setLogoType] = useState("slideIn");
 
     const homeRef = useRef(null);
     const serviceRef = useRef(null);
@@ -24,9 +24,9 @@ const App = () => {
 
     const scrollHandler = () => {
         if (window.pageYOffset + 61 > 80) {
-            setLogoType("small");
+            setLogoType("slideOut");
         } else {
-            setLogoType("default");
+            setLogoType("slideIn");
         }
         if (
             window.pageYOffset + 61 >= homeRef.current.offsetHeight &&
